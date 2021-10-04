@@ -1,0 +1,30 @@
+$h1Color: #369;
+$h1h3Color: #444;
+$bodyColor:#333;
+$font-family-sans-serif: Arial, Helvetica, sans-serif;
+$font-family-serif: Cambria, Georgia, serif;
+
+h1 {
+  color:$h1Color;
+  font-family:$font-family-sans-serif;
+  font-size: 250%;
+}
+
+h1,h3 {
+  color:$h1h3Color;
+  font-family:$font-family-sans-serif;
+  font-weight:lighter;
+}
+
+body {
+  margin: 2em;
+}
+
+body,input[type="text"], button {
+  color:$bodyColor;
+  font-family: $font-family-serif;
+}
+
+* {
+  font-family:$font-family-sans-serif;
+}
