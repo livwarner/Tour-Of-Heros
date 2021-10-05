@@ -1,22 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
+import { HEROS } from '../mock-heros';
 
 @Component({
   selector: 'app-heros',
   templateUrl: './heros.component.html',
   styleUrls: ['./heros.component.scss']
 })
+
 export class HerosComponent implements OnInit {
 
-  //inititalized with these properties from the hero interface class (hero.ts)
-  hero: Hero = {
-    id:1,
-    name: 'Windstorm'
-  }
+  heros = HEROS;
+
+  //click event handler
+  selectedHero?: Hero;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  onSelect(hero: Hero) : void {
+    this.selectedHero = hero;
+  }
 }
